@@ -1,0 +1,33 @@
+// Стандартная библиотека sass
+@use "sass:map";
+@use "sass:math";
+
+// Импорт файла стилей подключенных библиотек
+@import "libs.css";
+
+// Переопределение стилей подключенных библиотек
+// @import "vendors/";
+
+//Создание миксинов и переменных
+@import "helpers/functions";
+@import "helpers/mixins";
+@import "helpers/vars";
+
+// Объявление стилей для всего проекта
+@import "base/global";
+@import "base/reset";
+@import "base/fonts";
+
+// Стили для глобальных компонентов и шаблонов БЭМ
+@import "components/bem/title";
+
+// Стили для компонентов
+@import "components/img";
+@import "components/popup";
+
+// Стили для шаблонов страниц
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/imgBlock";
+@import "layouts/content";
+@import "layouts/main";

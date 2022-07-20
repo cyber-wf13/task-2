@@ -1,0 +1,26 @@
+.img {
+  height: 100%;
+  border: 5px solid #474747;
+  border-radius: 8px;
+  transition: border 0.3s ease-out, transform 0.5s ease;
+  cursor: pointer;
+
+  &:nth-child(4n + 1) {
+    border: 5px solid #f00;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      border: 5px solid #fbff00;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--no-transform {
+    @media (any-hover: hover) {
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
