@@ -10,7 +10,7 @@ export default class Popup {
 
     popupWrapper.classList.add("popup-wrapper");
     popupBody.classList.add("popup");
-    popupCloseButton.classList.add("popup__button-close");
+    popupCloseButton.classList.add("popup__button-close", "button");
     popupCloseButton.addEventListener("click", this.removePopup.bind(this));
     popupCloseButton.textContent = "X";
 
